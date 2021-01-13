@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Loopbox | A blackbox-like audio recorder</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Loopbox is a blackbox-like audio recorder made for people in difficult and intense situations">
+  <meta name="viewport" content="width=device-width">
+  <!-- inline everything because i wanna make only 1 web request -->
+  <link id="favicon" rel="shortcut icon" type="image/x-icon" href="data:image/png;base64,AAABAAEAICAQAAEABADoAgAAFgAAACgAAAAgAAAAQAAAAAEABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAID/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiERERERERIiIRERERIiIiIhERERERESIiERERESIiIiIREREREREiIhEREREiIiIiERERERERIiIRERERIiIiIhERIiIiIiIiIiIRESIiIiIRESIiIiIiIiIiEREiIiIiEREiIiIiIiIiIhERIiIiIhERIiIiIiIiIiIRESIiIiIiIiIiAAAAACIiEREiIiIiIiIiIgAAAAAiIhERIiIiIiIiIiIAAAAAIiIRESIiIiIiIiIiAAAAACIiEREiIiIiEREiIgAAAAAiIiIiIiIiIhERIiIAAAAAIiIiIiIiIiIRESIiAAAAACIiIiIiIiIiEREiIgAAAAAiIiIiIiIiIhERIiIiIiIiIiIAACIiIiIRESIiIiIiIiIiAAAiIiIiEREiIiIiIiIiIgAAIiIiIhERIiIiIiIiIiIAACIiIiIRERERIiIAAAAAAAAiIiIiERERESIiAAAAAAAAIiIiIhEREREiIgAAAAAAACIiIiIRERERIiIAAAAAAAAiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiL/////////////////////8ADwD/AA8A/wAPAP8ADwD/D//w/w//8P8P//D/D//w//8A8P//APD//wDw//8A8P8PAP//DwD//w8A//8PAP//D//w/w//8P8P//D/D//w/wDwAP8A8AD/APAA/wDwAP/////////////////////w==">
+</head>
+<body class="fullscreen">
+  <div class="centered">
+    <h1>Loopbox Audio Recorder</h1>
+    <h3>Loopbox is a blackbox-like audio recorder made for people in difficult and intense situations</h3>
+    <a class="button" target="_blank" href="https://play.google.com/store/apps/details?id=com.sizov.loopbox">Google Play</a>
+    <a class="button" id="button-manual" href="https://loopbox.io/Loopbox_v1.0.1.apk" download="Loopbox_v1.0.1">Manual APK download</a>
+    <div style="clear:both;"></div>
+    <a href="https://loopbox.io/privacy_policy.html" id="privacy_policy">Privacy Policy</a>
+  </div>
+  <style>
+    h1 {
+      user-select: none;
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      font-family: Verdana;
+      font-size: 4em;
+      color: #ff6600;
+      text-align: center;
+      margin: 0px;
+      font-weight:normal
+    }
+    h3 {
+      user-select: none;
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      font-family: Verdana;
+      font-size: 1.36em;
+      font-weight: normal;
+      color: #cccccc;
+      text-align: center;
+    }
+    .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      width: 80%;
+      padding: 8px;
+    }
+    #privacy_policy {
+      margin: 8px;
+      display: inline-block;
+      color: #cccccc;
+      text-decoration: none;
+    }
+    html,
+    body {
+      background-color: #242424;
+      background-repeat: no-repeat, repeat;
+      background-image: linear-gradient(to bottom right, #242424, #804000);
+      padding: 0px;
+      margin: 0px;
+      height: 100%;
+      width: 100%;
+    }
+    .button {
+      user-select: none;
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      margin: 8px;
+      font-family: Verdana;
+      float: center;
+      background-color: #FF6600;
+      border: 2px solid #FF6600;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 8px;
+      transition-duration: 0.36s;
+      cursor: pointer;
+    }
+    .button:hover {
+      background-color: rgba(0, 0, 0, 0);
+    }
+    #button-manual {
+      background-color: rgba(0, 0, 0, 0);
+    }
+    #button-manual:hover {
+      background-color: rgba(255, 102, 0, 255);
+    }
+  </style>
+</body>
+</html>
