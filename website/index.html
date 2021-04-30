@@ -18,6 +18,10 @@
     <div style="clear:both;"></div>
     <a href="https://loopbox.io/privacy_policy.html" id="privacy_policy">Please read our privacy policy</a>
   </div>
+  <div class="watermark">
+    <img src="https://sizov.dev/sizov_128.png" alt="A sizov.dev project by Alex Sizov"/>
+    <a rel="preload" href="https://sizov.dev/">sizov.dev</a>
+  </div>
   <style>
     h1 {
       user-select: none;
@@ -95,6 +99,33 @@
     }
     #button-manual:hover {
       background-color: rgba(255, 102, 0, 255);
+    }
+
+    .watermark {
+      margin: 16px;
+      padding: 4px;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 5;
+      border-radius: 8px;
+    }
+    .watermark:hover {
+      background-color: #161616;
+    }
+    .watermark img {
+      image-rendering: crisp-edges;
+      height: 100%;
+      margin-right: 16px;
+    }
+    .watermark a {
+      margin-right: 16px;
+      text-decoration: none;
+      color: #aaaaaa;
     }
   </style>
 </body>
