@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Loopbox | A blackbox-like audio recorder</title>
   <meta charset="UTF-8">
-  <meta name="description" content="Loopbox is a blackbox-like audio recorder made for people in difficult and intense situations">
+  <meta name="description"
+    content="Loopbox is a blackbox-like audio recorder made for people in difficult and intense situations">
   <meta name="viewport" content="width=device-width">
 </head>
+
 <body class="fullscreen">
   <div class="centered">
     <h1>Loopbox - Blackbox audio recorder</h1>
-    <h3>Loopbox is a background audio recorder that allows you to save the last few minutes of your microphone audio in the event of an emergency situation, where you might want to get the authorities involved.
-      The app is designed to run in the background at all times, requires no user intervention, and is easy on battery.</h3>
-    <a class="button" target="_blank" href="https://play.google.com/store/apps/details?id=com.sizov.loopbox">Get on Google Play</a>
-    <a class="button" id="button-manual" href="https://loopbox.io/Loopbox_v1.1.4.apk" download="Loopbox_v1.1.4.apk">Manual APK download</a>
+    <h3>Loopbox is a background audio recorder that allows you to save the last few minutes of your microphone audio in
+      the event of an emergency situation, where you might want to get the authorities involved.
+      The app is designed to run in the background at all times, requires no user intervention, and is easy on battery.
+    </h3>
+    <a class="button" target="_blank" href="https://play.google.com/store/apps/details?id=com.sizov.loopbox">Get on
+      Google Play</a>
+    <a class="button" id="button-manual" href="https://loopbox.io/Loopbox_v1.1.4.apk"
+      download="Loopbox_v1.1.4.apk">Manual APK download</a>
     <div style="clear:both;"></div>
     <a href="https://loopbox.io/privacy_policy.html" id="privacy_policy">Please read our privacy policy</a>
   </div>
   <a rel="preload" href="https://sizov.dev/">
     <div class="watermark">
-      <img src="https://sizov.dev/icon.svg" alt="A sizov.dev project by Alex Sizov"/>
+      <img src="https://sizov.dev/icon.svg" alt="A sizov.dev project by Alex Sizov" />
       <p>sizov.dev</p>
-   </div>
+    </div>
   </a>
   <style>
     h1 {
@@ -33,8 +40,9 @@
       color: #ff6600;
       text-align: center;
       margin: 0px;
-      font-weight:normal
+      font-weight: normal
     }
+
     h3 {
       user-select: none;
       -moz-user-select: none;
@@ -46,6 +54,7 @@
       color: #cccccc;
       text-align: center;
     }
+
     .centered {
       position: absolute;
       top: 50%;
@@ -55,12 +64,14 @@
       width: 80%;
       padding: 8px;
     }
+
     #privacy_policy {
       margin: 8px;
       display: inline-block;
       color: #cccccc;
       text-decoration: none;
     }
+
     html,
     body {
       background-color: #242424;
@@ -71,6 +82,7 @@
       height: 100%;
       width: 100%;
     }
+
     .button {
       user-select: none;
       -moz-user-select: none;
@@ -91,12 +103,15 @@
       transition-duration: 0.36s;
       cursor: pointer;
     }
+
     .button:hover {
       background-color: rgba(0, 0, 0, 0);
     }
+
     #button-manual {
       background-color: rgba(0, 0, 0, 0);
     }
+
     #button-manual:hover {
       background-color: rgba(255, 102, 0, 255);
     }
@@ -114,14 +129,17 @@
       z-index: 5;
       border-radius: 8px;
     }
+
     .watermark:hover {
       background-color: #161616;
     }
+
     .watermark img {
       image-rendering: crisp-edges;
       height: 100%;
       margin-right: 16px;
     }
+
     .watermark p {
       margin-right: 16px;
       text-decoration: none;
@@ -129,4 +147,5 @@
     }
   </style>
 </body>
+
 </html>
